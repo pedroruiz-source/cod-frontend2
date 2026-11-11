@@ -4,35 +4,35 @@ import "./App.css";
 const produtos = [
   {
     id: 1,
-    nome: "Batom Velvet Pink",
+    nome: "BRIDE KIT",
     categoria: "LÁBIOS",
     preco: 59.90,
     imagem:
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=85",
+      "https://www.novaera.com.br/cdn/shop/files/kit-fran-by-franciny-ehlke-bride-com-3un_0a8192cf-6601-4796-b8f6-3e5d4aabe1e8.jpg?v=1790367326&width=832",
   },
   {
     id: 2,
-    nome: "Paleta Rose Glow",
-    categoria: "OLHOS",
-    preco: 129.90,
+    nome: "PÓ FACIAL SOLTO PLUSH 1",
+    categoria: "BASE",
+    preco: 39.90,
     imagem:
-      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=85",
+      "https://franbyfr.com.br/cdn/shop/files/7898969501415_1.jpg?v=1754228569&width=1650",
   },
   {
     id: 3,
-    nome: "Blush Pink Dream",
+    nome: "Balm Hidratante Facial 15g",
     categoria: "FACE",
-    preco: 74.90,
+    preco: 119.90,
     imagem:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=85",
+      "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F19355617.webp&w=828&q=75",
   },
   {
     id: 4,
-    nome: "Kit Beauty Luxury",
+    nome: "Sérum Facial Fisiogel A.I Ação Calmante Pele Sensível com 30ml",
     categoria: "COLEÇÃO ESPECIAL",
     preco: 189.90,
     imagem:
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85",
+      "https://product-data.raiadrogasil.io/images/17014018.webp",
   },
 ];
 
@@ -65,7 +65,7 @@ function App() {
       "Olá! Quero fazer um pedido na JP Pink:",
       "",
       ...carrinho.map(
-        (produto) =>
+        (produto) =>https
           `• ${produto.nome} - ${formatarPreco(produto.preco)}`
       ),
       "",
@@ -154,7 +154,7 @@ function App() {
 
           <div className="hero-image">
             <img
-              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=90"
+              src="https://i.pinimg.com/736x/72/b3/29/72b329701b1e2f4ab5f72f7b71b71710.jpg"
               alt="Coleção de produtos de beleza"
             />
             <div className="image-caption">
@@ -224,7 +224,7 @@ function App() {
         <section className="manifesto" id="sobre">
           <div className="manifesto-image">
             <img
-              src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"
+              src="https://i.pinimg.com/736x/1e/87/2d/1e872d41f0f5de2627eeaa675d282f00.jpg"
               alt="Produtos e acessórios de maquiagem"
             />
           </div>
