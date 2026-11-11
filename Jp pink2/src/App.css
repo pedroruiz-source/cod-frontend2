@@ -1,0 +1,681 @@
+
+.site {
+  overflow: hidden;
+  background: #fffdfd;
+}
+
+.topbar {
+  padding: 10px 16px;
+  background: #d83e79;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.header {
+  min-height: 94px;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #fffdfd;
+  border-bottom: 1px solid #f4e5eb;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  color: #4b2637;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 0.9;
+  text-decoration: none;
+  letter-spacing: -2px;
+}
+
+.logo span {
+  color: #df4d86;
+  display: inline;
+}
+
+.logo small {
+  margin-top: 8px;
+  color: #a77b8c;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav a {
+  color: #684451;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #d83e79;
+}
+
+.cart-button {
+  padding: 12px 16px;
+  color: #d83e79;
+  background: #fff2f7;
+  border: 1px solid #f5d3e1;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 8px;
+  color: #77344f;
+  background: transparent;
+  font-size: 24px;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  min-height: 590px;
+  align-items: center;
+  padding: 55px 7%;
+  background:
+    radial-gradient(ellipse at 15% 80%, #fce4ed 0, transparent 45%),
+    #fff8fa;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 500px;
+  padding: 20px 25px 20px 0;
+}
+
+.eyebrow {
+  color: #c84b7c;
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.hero h1,
+.section-heading h2,
+.manifesto h2,
+.newsletter h2 {
+  margin: 22px 0;
+  color: #492737;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5vw, 66px);
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.hero h1 em,
+.section-heading h2 em,
+.manifesto h2 em,
+.newsletter h2 em {
+  color: #d84b83;
+  font-weight: 400;
+}
+
+.hero-content > p,
+.manifesto-content > p {
+  max-width: 410px;
+  color: #866b76;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.primary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 22px;
+  padding: 17px 23px;
+  color: white;
+  background: #d83e79;
+  border: 1px solid #d83e79;
+  border-radius: 2px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.primary-button:hover {
+  background: #b52d63;
+  transform: translateY(-2px);
+}
+
+.hero-note {
+  margin-top: 30px;
+  color: #94717f;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.hero-note span {
+  color: #d83e79;
+  margin-right: 8px;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+  height: 460px;
+  overflow: hidden;
+  background: #f0d8e1;
+}
+
+.hero-image > img,
+.product-image img,
+.manifesto-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-image > img {
+  object-position: center;
+}
+
+.image-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 35px 25px 22px;
+  color: white;
+  background: linear-gradient(transparent, #42232cbd);
+}
+
+.image-caption span {
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.image-caption strong {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.hero-decoration {
+  position: absolute;
+  right: 43%;
+  bottom: 20px;
+  color: #e6b8cb55;
+  font-family: Georgia, serif;
+  font-size: 160px;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px 7%;
+  background: white;
+  border-bottom: 1px solid #f3e5eb;
+}
+
+.benefits > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-right: 1px solid #f2e2e9;
+}
+
+.benefits > div:last-child {
+  border-right: none;
+}
+
+.benefits span {
+  color: #d83e79;
+  font-size: 23px;
+}
+
+.benefits p {
+  color: #765462;
+  font-size: 12px;
+}
+
+.products-section {
+  padding: 90px 7%;
+}
+
+.section-heading {
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 16px 0;
+  font-size: clamp(32px, 4vw, 45px);
+}
+
+.section-heading > p,
+.newsletter > p {
+  color: #987d88;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.product-card {
+  min-width: 0;
+  background: white;
+  border: 1px solid #f2e5eb;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px #7b355110;
+}
+
+.product-image {
+  position: relative;
+  height: 245px;
+  overflow: hidden;
+  background: #f8eaf0;
+}
+
+.product-image img {
+  transition: transform 0.4s;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.product-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 7px 9px;
+  color: #a63e69;
+  background: #fff8fb;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.product-info {
+  padding: 20px 15px;
+}
+
+.product-category {
+  color: #c17a97;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.product-info h3 {
+  margin: 10px 0;
+  color: #583447;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-price {
+  margin: 14px 0;
+  color: #c83c76;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.add-button {
+  width: 100%;
+  padding: 13px 6px;
+  color: #c83c76;
+  background: white;
+  border: 1px solid #e9a7c1;
+  font-size: 9px;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.add-button:hover {
+  color: white;
+  background: #d83e79;
+  border-color: #d83e79;
+}
+
+.manifesto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 8%;
+  padding: 75px 10%;
+  background: #fff3f7;
+}
+
+.manifesto-image {
+  height: 390px;
+  overflow: hidden;
+}
+
+.manifesto-content h2 {
+  font-size: clamp(32px, 4vw, 47px);
+}
+
+.manifesto-content > p {
+  margin: 22px 0;
+}
+
+.text-link {
+  display: inline-block;
+  padding-bottom: 9px;
+  color: #c83c76;
+  border-bottom: 1px solid #dc8eae;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.cart-section {
+  padding: 80px 7%;
+  background: #fffdfd;
+}
+
+.cart-section .section-heading {
+  margin-bottom: 30px;
+}
+
+.cart-section .section-heading h2 {
+  font-size: 40px;
+}
+
+.empty-cart {
+  padding: 30px;
+  color: #987d88;
+  text-align: center;
+  background: #fff5f8;
+}
+
+.cart-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.cart-item,
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 10px;
+  color: #684451;
+  border-bottom: 1px solid #f1e0e8;
+  font-size: 13px;
+}
+
+.cart-item strong,
+.cart-total strong {
+  color: #c83c76;
+}
+
+.cart-item button {
+  padding: 5px 10px;
+  color: #c83c76;
+  background: transparent;
+  font-size: 22px;
+}
+
+.cart-total {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.checkout-button {
+  width: 100%;
+}
+
+.checkout-note {
+  color: #987d88;
+  font-size: 11px;
+  text-align: center;
+}
+
+.newsletter {
+  padding: 75px 20px;
+  text-align: center;
+  background: #fbe8ef;
+}
+
+.newsletter h2 {
+  margin: 18px 0;
+  font-size: clamp(30px, 4vw, 45px);
+}
+
+.newsletter > p {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 35px 7%;
+  background: #fffdfd;
+}
+
+.footer-logo {
+  font-size: 28px;
+}
+
+.footer p,
+.footer > span {
+  color: #987d88;
+  font-size: 11px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding: 18px 4%;
+    gap: 15px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 45px 5%;
+  }
+
+  .hero-image {
+    height: 390px;
+  }
+
+  .products-section {
+    padding: 70px 5%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .product-image {
+    height: 280px;
+  }
+}
+
+@media (max-width: 650px) {
+  .topbar {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .header {
+    position: relative;
+    min-height: 78px;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 29px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .cart-button {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .nav {
+    display: none;
+    order: 4;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+  .nav-open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 13px 5px;
+    border-top: 1px solid #f5e6ed;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 48px 6% 35px;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .hero h1 {
+    margin: 17px 0;
+    font-size: 48px;
+  }
+
+  .hero-content > p {
+    font-size: 13px;
+  }
+
+  .hero-image {
+    height: 330px;
+  }
+
+  .hero-decoration {
+    display: none;
+  }
+
+  .benefits {
+    padding: 20px 3%;
+  }
+
+  .benefits > div {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .benefits p {
+    margin: 4px 0;
+    font-size: 10px;
+  }
+
+  .benefits span {
+    font-size: 20px;
+  }
+
+  .products-section {
+    padding: 60px 5%;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .product-grid {
+    gap: 12px;
+  }
+
+  .product-image {
+    height: 185px;
+  }
+
+  .product-info {
+    padding: 14px 10px;
+  }
+
+  .product-info h3 {
+    min-height: 40px;
+    font-size: 16px;
+  }
+
+  .product-category {
+    font-size: 8px;
+  }
+
+  .add-button {
+    font-size: 8px;
+  }
+
+  .manifesto {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 55px 6%;
+  }
+
+  .manifesto-image {
+    height: 300px;
+  }
+
+  .cart-section {
+    padding: 55px 5%;
+  }
+
+  .newsletter {
+    padding: 55px 6%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 35px 5%;
+  }
+
+  .footer p {
+    margin: 5px 0;
+  }
+}
